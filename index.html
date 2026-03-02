@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Ordering</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <h1>Pizza Ordering Service</h1>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Name</legend>
+            <input placeholder="e.g. John Doe" required="A-Za-z" autofocus>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Size</legend>
+            <input type="radio"><label> 6"</label>
+            <input type="radio"><label> 8"</label>
+            <input type="radio"><label> 10"</label>
+            <input type="radio"><label> 12"</label>
+            <input type="radio"><label> 14"</label>
+            <input type="radio"><label> 16"</label>
+            <input type="radio"><label> 18"</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Toppings</legend>
+            <input list="toppings-list" name="toppings" placeholder="Click on dropdown">
+            <datalist id="toppings-list">
+                <option value="Pepperoni">
+                <option value="Extra Cheese">
+                <option value="Mushroom">
+                <option value="Onions">
+                <option value="Pepper">
+                <option value="Basil">
+                <option value="Olives">
+                <option value="Spinach">
+            </datalist>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

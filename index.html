@@ -2,17 +2,21 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <title>Pizza Ordering</title>
 </head>
 
 <body>
     <script src="script.js"></script>
+  <main class="h1">
     <h1>Pizza Ordering Service</h1>
+  </main>
     <form method="post" action="">
         <fieldset>
             <legend>Name</legend>
-            <input placeholder="e.g. John Doe" required="A-Za-z" autofocus>
+            <input placeholder="e.g. John Doe" pattern="[A-Za-z\u00C0-\u017F\s-']+" autofocus>
         </fieldset>
         <br>
         <fieldset>
@@ -41,7 +45,7 @@
             </datalist>
         </fieldset>
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit" disabled>Submit</button>
     </form>
 </body>
 

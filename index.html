@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <title>Pizza Ordering</title>
 </head>
 
 <body>
     <script src="script.js"></script>
-  <main class="h1">
-    <h1>Pizza Ordering Service</h1>
-  </main>
+    <main class="h1">
+        <h1>Pizza Ordering Service</h1>
+    </main>
     <form method="post" action="">
         <fieldset>
             <legend>Name</legend>
@@ -21,7 +21,8 @@
         <br>
         <fieldset>
             <legend>Size</legend>
-            <input type="radio"><label> 6"</label>
+            <input type="radio"><label class="meme"> 6"</label>
+            <input type="radio"><label class="meme"> 7"</label>
             <input type="radio"><label> 8"</label>
             <input type="radio"><label> 10"</label>
             <input type="radio"><label> 12"</label>
@@ -32,7 +33,7 @@
         <br>
         <fieldset>
             <legend>Toppings</legend>
-            <input list="toppings-list" name="toppings" placeholder="Click on dropdown">
+            <input list="toppings-list" type="text" name="toppings" placeholder="Click on dropdown">
             <datalist id="toppings-list">
                 <option value="Pepperoni">
                 <option value="Extra Cheese">
